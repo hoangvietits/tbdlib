@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1370</width>
+    <height>901</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_log_lv1">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>251</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:rgb(0, 170, 127);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+QPushButton::pressed{
+    background-color: rgb(224,224,0);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Lịch sử</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_member_lv1">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>140</y>
+      <width>221</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:rgb(0, 40, 40);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+QPushButton::pressed{
+    background-color: rgb(224,224,0);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Thành viên</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_ret_lv1">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>140</y>
+      <width>221</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:rgb(120, 120, 127);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+QPushButton::pressed{
+    background-color: rgb(224,224,0);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Trả sách</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_store_lv1">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>140</y>
+      <width>221</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:rgb(190,0,0);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+QPushButton::pressed{
+    background-color: rgb(224,224,0);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Kho sách</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="log_view">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>260</y>
+      <width>1371</width>
+      <height>641</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="member_vview">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>260</y>
+      <width>751</width>
+      <height>621</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="ret_view">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>260</y>
+      <width>921</width>
+      <height>631</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_remove">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>270</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:rgb(255, 170, 127);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+QPushButton::pressed{
+    background-color: rgb(224,224,0);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Xóa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_add_mem">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>270</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:rgb(0, 220, 127);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+QPushButton::pressed{
+    background-color: rgb(224,224,0);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Thêm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_ret_comf">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>270</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:rgb(0, 0, 127);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+QPushButton::pressed{
+    background-color: rgb(224,224,0);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ret_text">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>430</y>
+      <width>401</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_ret_comf_2">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>350</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:rgb(0, 127, 127);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+QPushButton::pressed{
+    background-color: rgb(224,224,0);
+    border-style: inset;
+}</string>
+    </property>
+    <property name="text">
+     <string>Hủy</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="id_text_ctrs">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>350</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="name_member">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>430</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email_member">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>500</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phone_member">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>570</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Unit_member">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>640</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>360</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tên thành viên</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>350</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>500</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>570</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Số điện thoại</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>640</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Đơn vị</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>271</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>asdasdasdasd</string>
+    </property>
+   </widget>
+   <zorder>btn_log_lv1</zorder>
+   <zorder>btn_member_lv1</zorder>
+   <zorder>btn_ret_lv1</zorder>
+   <zorder>btn_store_lv1</zorder>
+   <zorder>log_view</zorder>
+   <zorder>member_vview</zorder>
+   <zorder>ret_view</zorder>
+   <zorder>btn_add_mem</zorder>
+   <zorder>btn_remove</zorder>
+   <zorder>btn_ret_comf</zorder>
+   <zorder>ret_text</zorder>
+   <zorder>btn_ret_comf_2</zorder>
+   <zorder>id_text_ctrs</zorder>
+   <zorder>name_member</zorder>
+   <zorder>email_member</zorder>
+   <zorder>phone_member</zorder>
+   <zorder>Unit_member</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
